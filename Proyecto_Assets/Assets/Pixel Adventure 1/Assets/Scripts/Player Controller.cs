@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement; 
 
 
 public class PlayerController : MonoBehaviour
@@ -11,8 +12,8 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D myRigidbody2D;
     private SpriteRenderer mySpriteRenderer;
-    //public GameObject Bullet;
-   // public GameManager myGameManager;
+    public GameObject Bullet;
+    public GameManager myGameManager;
     
     
     void Start()
@@ -20,7 +21,7 @@ public class PlayerController : MonoBehaviour
         myRigidbody2D = GetComponent<Rigidbody2D>();
         mySpriteRenderer = GetComponent<SpriteRenderer>();
         StartCoroutine(WalkCoRutine());
-       // myGameManager = FindObjectOfType<GameManager>();
+        myGameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
@@ -36,10 +37,10 @@ public class PlayerController : MonoBehaviour
         myRigidbody2D.linearVelocity = new Vector2(playerSpeed, myRigidbody2D.linearVelocity.y);
 
         //Configurar el disparo cuando se presiona la tecla E
-        //if(Input.GetKeyDown(KeyCode.E))
-        //{
-        //    Instantiate(Bullet, transform.position, Quaternion.identity);
-        //}
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            Instantiate(Bullet, transform.position, Quaternion.identity);
+        }
 
     }
 
@@ -53,6 +54,33 @@ public class PlayerController : MonoBehaviour
            index = 0;
        }
        StartCoroutine(WalkCoRutine());
+
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("ItemGood"))
+        {
+            Destroy(collision.gameObject);
+            myGameManager.AddScore();
+
+        }
+
+        else if (collision.CompareTag("ItemBad"))
+        {
+            Destroy(collision.gameObject);
+            PlayerDeath();
+        }
+        else if (collision.CompareTag("DeathZone"))
+        {
+            PlayerDeath();
+        }
+
+        void PlayerDeath()
+        {
+            SceneManager.LoadScene("Level2D");
+        }
+
 
     }
 
