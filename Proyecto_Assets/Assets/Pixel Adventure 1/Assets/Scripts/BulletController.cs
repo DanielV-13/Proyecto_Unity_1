@@ -9,7 +9,7 @@ public class BulletController : MonoBehaviour
 
     void Start()
     {
-        myRigidbody2D = GetComponent<Rigidbody2D>();
+       myRigidbody2D = GetComponent<Rigidbody2D>();
        myGameManager = FindObjectOfType<GameManager>();
     }
 
