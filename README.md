@@ -12,27 +12,9 @@ Juego tipo *platformer* 2D desarrollado en **Unity** con **C#** como ejercicio d
 
 ## Capturas / Demo
 
-<!-- ================== VIDEO DE LA DEMO ==================
-     Aquí va el video de tu partida (Screen Recording 2026-07-29 232111.mp4).
-     GitHub NO permite pegar el video escribiéndolo en el archivo: hay que
-     SUBIRLO desde la web. Pasos:
-       1. Abre tu repo en github.com y entra a este README.
-       2. Toca el lápiz (Edit) para editarlo en el navegador.
-       3. Arrastra el archivo .mp4 justo debajo de esta línea y suéltalo.
-       4. GitHub lo sube solo y genera un enlace tipo:
-          https://github.com/user-attachments/assets/xxxx
-       5. Haz "Commit changes".
-     (El .mp4 pesa ~35 MB; el límite de GitHub es 100 MB, así que entra bien.)
-     ===================================================== -->
+    
+https://github.com/user-attachments/assets/b8cb8c4d-fc64-4c44-961b-4b4cce5ae8f1
 
-*[ ⬆️ Sube aquí el video de tu demo siguiendo las instrucciones del comentario de arriba ]*
-
-<!-- Capturas de pantalla: guárdalas en docs/screenshots/ y descomenta:
-![Vista principal](docs/screenshots/main.png)
-![Jugabilidad](docs/screenshots/gameplay.png)
--->
-
-*[ Agrega aquí tus capturas de pantalla ]*
 
 ## Cómo jugar
 
@@ -100,13 +82,13 @@ El personaje avanza solo hacia la derecha, no hay que hacer nada para moverlo.
 
 - **Habilidades desarrolladas:** programación en C# aplicada a Unity, uso de componentes (`Rigidbody2D`, `Collider2D`, `SpriteRenderer`) y manejo de colisiones por *tags*.
 - **Qué funcionó bien:** la generación infinita con corrutinas y el sistema de puntaje quedaron simples y estables.
-- **Qué se podría mejorar:** *[completa con tu experiencia — ej. animaciones, dificultad progresiva, pantalla de Game Over, sonido]*.
-- **Conceptos clave aplicados de la materia:** *[completa — ej. clases y objetos, encapsulamiento, control de flujo, estructuras de control, eventos]*.
+- **Qué se podría mejorar:** *La generacion de un fondo animado que se mueva con la cámara, la inclusión de efectos de sonido y más tipos de interacciones con el player*.
+
 
 ## Créditos
 
 Los recursos usados fueron obtenidos de las siguientes fuentes:
 
-- **Assets principales (personaje y elementos del juego)** — Unity Asset Store: *[PEGA AQUÍ EL LINK DEL ASSET QUE USASTE]*
+- **Assets principales (personaje y elementos del juego)** — Unity Asset Store: https://assetstore.unity.com/2d
 - **Fondo (background)** — extraído del juego *Teenage Mutant Ninja Turtles: Shredder's Revenge*: [Episode 08: Panic in the Sky! — The Spriters Resource](https://www.spriters-resource.com/pc_computer/teenagemutantninjaturtlesshreddersrevenge/asset/179425/) (recuperado el 29 de julio de 2026).
 - **Idea original del nivel y música** — [Video de referencia en YouTube](https://youtu.be/BG0zDs1lgXc?si=5TQC4zENtzRNAl-Y).
