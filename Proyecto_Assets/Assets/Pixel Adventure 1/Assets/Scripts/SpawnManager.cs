@@ -21,7 +21,9 @@ public class SpawnManager : MonoBehaviour
 
     {
         yield return new WaitForSeconds(waitTime);
-        Instantiate(itemPrefab[Random.Range(0,itemPrefab.Length)], transform.position, Quaternion.identity);
+        Vector3 posicionSpawn = transform.position;
+        posicionSpawn.y += Random.Range(-2f, 2f);   // varía la altura al azar
+        Instantiate(itemPrefab[Random.Range(0, itemPrefab.Length)], posicionSpawn, Quaternion.identity);
         StartCoroutine(SpawnCorutine(Random.Range(minTime,maxTime)));
     }
 
