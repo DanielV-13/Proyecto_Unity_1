@@ -73,7 +73,7 @@ El personaje avanza solo hacia la derecha, no hay que hacer nada para moverlo.
 
 | Indicador | Valor |
 |-----------|-------|
-| Commits totales | 7 |
+| Commits totales | 10 |
 | Issues/PRs fusionados | — |
 | Cobertura de pruebas | N/A |
 | Última actualización | 2026-07-29 |
